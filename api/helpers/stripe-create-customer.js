@@ -1,4 +1,3 @@
-const stripe = require('stripe')(sails.config.custom.stripeSecretKey);
 
 module.exports = {
 
@@ -27,6 +26,7 @@ module.exports = {
     },
 
     fn: async function (inputs) {
+        const stripe = require('stripe')(sails.config.custom.stripeSecretKey);
         try {
             const customer = await stripe.customers.create({
                 email: inputs.email,
