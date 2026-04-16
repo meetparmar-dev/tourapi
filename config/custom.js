@@ -13,12 +13,12 @@ module.exports.custom = {
   jwtSecret: process.env.JWT_SECRET,
 
   email: {
-    from: '"Annaizu Tours" <verify@annaizu.com>',
+    from: '"Traveling Tours" <verify@traveling.com>',
     host: "sandbox.smtp.mailtrap.io",
     port: 2525,
     auth: {
-      user: "7ec7314d7fd0f7",
-      pass: "3b212a7fd0a9e8"
+      user: "a975d875a5f2d3",
+      pass: "7fd9956a7dfb2e"
     }
   },
   baseUrl: 'http://localhost:1337',
